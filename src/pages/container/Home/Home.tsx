@@ -106,16 +106,11 @@ const Home = () => {
           </div>
         </Header>
         <div style={{ background: colorBgContainer, margin: "20px" }}>
-          <Row justify="space-around">
+          <Row justify="center">
             <Col span={12}>
               <ContentBlog />
-              <ContentBlog />
-              <ContentBlog />
-              <ContentBlog />
-              <ContentBlog />
-              <ContentBlog />
             </Col>
-            <Divider type="vertical" orientationMargin={2} />
+            <Divider type="vertical" />
             <Col span={4}>
               <RightTopics />
             </Col>
