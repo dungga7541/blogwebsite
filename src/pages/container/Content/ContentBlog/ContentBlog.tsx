@@ -1,12 +1,16 @@
 import React, { FC } from "react";
 import Blog from "../../../../components/Content/Blog";
-import { Divider } from "antd";
+import { Divider, Pagination } from "antd";
+import { Link } from "react-router-dom";
+
 interface ContentBlog {}
 
 const ContentBlog: React.FC<{}> = () => {
   return (
     <div style={{ width: "100%", textAlign: "left" }}>
-      <Blog />
+      <Link to="/topic1">
+        <Blog />
+      </Link>
       <Divider />
       <Blog />
       <Divider />
@@ -14,6 +18,11 @@ const ContentBlog: React.FC<{}> = () => {
       <Divider />
       <Blog />
       <Divider />
+      <Pagination
+        defaultCurrent={1}
+        total={100}
+        style={{ textAlign: "center" }}
+      />
     </div>
   );
 };
